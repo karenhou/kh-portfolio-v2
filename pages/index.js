@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Hero from "../components/hero";
+import About from "../components/about";
 
 const Home = () => (
   <div>
@@ -10,6 +11,7 @@ const Home = () => (
     </Head>
 
     <Hero />
+    <About />
   </div>
 );
 
