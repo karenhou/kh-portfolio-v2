@@ -9,7 +9,7 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <h3 className="text-red-300 font-bold underline">Hello</h3>
+    <Nav />
   </div>
 );
 

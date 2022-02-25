@@ -4,7 +4,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lb: "#99CDFF",
+        mb: "#339ACC",
+        db: "#000033",
+        gr: "#336666",
+        or: "FFCC99",
+      },
+    },
   },
   plugins: [
     require("postcss-import"),
