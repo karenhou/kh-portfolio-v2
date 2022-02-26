@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
-import { Disclosure, Transition } from "@headlessui/react";
+import React from "react";
+import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 
 const Experience = () => {
   return (
     <section className="bg-db text-white" id="exp">
-      <div className="container mx-auto min-h-[50rem]">
+      <div className="container mx-auto min-h-[45rem]">
         <div className="flex flex-col pt-[9rem] md:w-[44rem] sm:w-[36rem] w-[26rem] mx-auto">
           <h2 className="md:text-4xl text-3xl text-lb mb-6">
             {">_ Experience"}

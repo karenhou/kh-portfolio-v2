@@ -7,10 +7,11 @@ module.exports = {
     extend: {
       colors: {
         lb: "#99CDFF",
+        peach: "#FF9999",
         mb: "#339ACC",
         db: "#000033",
         gr: "#336666",
-        or: "FFCC99",
+        or: "#FFCC99",
       },
     },
   },
