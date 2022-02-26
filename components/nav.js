@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Mugshot from "../assets/images/mugshot.PNG";
+import Mugshot from "../assets/images/mugshot.png";
 import Image from "next/image";
 
 const ArrorComponent = () => {
