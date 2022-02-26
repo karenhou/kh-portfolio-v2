@@ -4,6 +4,7 @@ import Hero from "../components/hero";
 import About from "../components/about";
 import Experience from "../components/experience";
 import Work from "../components/work";
+import Footer from "../components/footer";
 
 const Home = () => (
   <div>
@@ -16,6 +17,7 @@ const Home = () => (
     <About />
     <Experience />
     <Work />
+    <Footer />
   </div>
 );
 
