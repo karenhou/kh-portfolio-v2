@@ -7,7 +7,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="h-16 flex bg-db text-white items-center px-10 lg:px-16">
-      <div>
+      <div className="xxs:hidden xs:flex">
         © {new Date().getFullYear()} , Karen Hou, Built with{" "}
         <a
           href="https://nextjs.org/"

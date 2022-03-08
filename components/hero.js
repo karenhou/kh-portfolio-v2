@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="bg-db text-white">
       <div className="container mx-auto h-[50rem]">
-        <div className="flex flex-col h-full justify-center md:w-[44rem] sm:w-[36rem] w-[26rem] mx-auto">
+        <div className="flex flex-col h-full justify-center md:max-w-[44rem] sm:max-w-[36rem] max-w-[26rem] mx-auto">
           <p className="md:text-4xl text-3xl text-lb mb-5">{"Hello. I'm"}</p>
           <h1 className="text-6xl mb-5">Karen Hou</h1>
 

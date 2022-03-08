@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section className="bg-db text-white" id="about">
       <div className="container mx-auto min-h-[50rem]">
-        <div className="flex flex-col pt-[7rem] w-[26rem] sm:w-[36rem] md:w-[44rem] lg:w-[54rem] xl:w-[65rem] mx-auto">
+        <div className="flex flex-col pt-[7rem] max-w-[26rem] sm:max-w-[36rem] md:max-w-[44rem] lg:max-w-[54rem] xl:max-w-[65rem] mx-auto">
           <h2 className="md:text-4xl text-3xl text-mb mb-5">{">_ About"}</h2>
           <div className="lg:flex-row flex-col flex">
             <div className=" text-white text-xl md:mr-7 mr-0 sm:leading-9 leading-normal">
@@ -18,8 +18,8 @@ const About = () => {
               writing mostly <KeyWord>C/C++</KeyWord> creating products like
               tablet, develop broad and smart speaker. After 4 years, I decided
               I would like to venture into web development, so I enrolled online
-              classes/bootcamps to prepare myself for the new career. Now{" "}
-              {"I've"}
+              classes/bootcamps to prepare myself for the new career. Now
+              {" I've "}
               worked as a fullstack developer for a startup company for two
               years; during which our internal system has submitted and granted
               patent. Our stacks for all the projects are written in{" "}

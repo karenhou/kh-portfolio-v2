@@ -7,4 +7,12 @@
   span {
     border-radius: 12px;
   }
+
+  @media only screen and (max-width: 321px) {
+    width: 300px;
+  }
+
+  @media only screen and (max-width: 475px) {
+    width: 320px;
+  }
 }

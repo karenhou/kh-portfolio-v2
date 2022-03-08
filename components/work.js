@@ -80,7 +80,7 @@ const Work = () => {
   return (
     <section className="bg-db text-white" id="works">
       <div className="container mx-auto min-h-[50rem]">
-        <div className="flex flex-col pt-[7rem] w-[26rem] sm:w-[36rem] md:w-[44rem] lg:w-[54rem] xl:w-[65rem] mx-auto pb-[7rem]">
+        <div className="flex flex-col pt-[7rem] max-w-[26rem] sm:max-w-[36rem] md:max-w-[44rem] lg:max-w-[54rem] xl:max-w-[65rem] mx-auto pb-[7rem]">
           <div className="lg:flex py-4">
             <div className="lg:w-1/3 mb-2 md:mb-0">
               <h2 className="md:text-4xl text-3xl text-mb mb-5">

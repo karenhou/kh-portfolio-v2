@@ -6,12 +6,12 @@ const Experience = () => {
   return (
     <section className="bg-db text-white" id="exp">
       <div className="container mx-auto min-h-[45rem]">
-        <div className="flex flex-col pt-[9rem] md:w-[44rem] sm:w-[36rem] w-[26rem] mx-auto">
+        <div className="flex flex-col pt-[9rem] md:max-w-[44rem] sm:max-w-[36rem] max-w-[20rem] mx-auto">
           <h2 className="md:text-4xl text-3xl text-mb mb-6">
             {">_ Experience"}
           </h2>
           <div className="w-full px-0 pt-2">
-            <div className="w-full xl:max-w-2xl sm:max-w-full max-w-md p-2 mx-auto bg-white rounded-2xl">
+            <div className="w-full xl:max-w-2xl sm:max-w-full max-w-xs p-2 sm:mx-auto mx-0 bg-white rounded-2xl">
               <Disclosure>
                 {({ open }) => (
                   <>
