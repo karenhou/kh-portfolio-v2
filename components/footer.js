@@ -12,6 +12,7 @@ const Footer = () => {
         <a
           href="https://nextjs.org/"
           target="_blank"
+          rel="noreferrer"
           className="hover:underline hover:text-lb">
           NextJS
         </a>
@@ -21,7 +22,8 @@ const Footer = () => {
           <a
             className="h-5 w-5 mr-4"
             href="https://github.com/karenhou"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             <Image src={GitHubIcon} alt="GitHubIcon" layout="responsive" />
           </a>
           <a className="h-5 w-5 mr-4" href="mailto:ymcl760728@gmail.com">
@@ -30,7 +32,8 @@ const Footer = () => {
           <a
             className="h-5 w-5"
             href="https://www.linkedin.com/in/khou/"
-            target="_blank">
+            target="_blank"
+            rel="noreferrer">
             <Image src={LinkedinIcon} alt="LinkedinIcon" layout="responsive" />
           </a>
         </div>

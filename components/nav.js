@@ -39,9 +39,7 @@ const Nav = () => (
             <div className="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
               <div className="flex-shrink-0 flex items-center">
                 <Link href="/">
-                  <a
-                    href="/"
-                    className=" text-gray-300 rounded-full font-medium h-10 w-10">
+                  <a className=" text-gray-300 rounded-full font-medium h-10 w-10">
                     <Image
                       src={Mugshot}
                       alt="mugshot"
@@ -61,8 +59,6 @@ const Nav = () => (
                       <ArrorComponent />
                       <Link href={item.href}>
                         <a
-                          // key={item.name}
-                          href={item.href}
                           className={classNames(
                             item.current
                               ? "bg-gray-900 text-white"
@@ -84,12 +80,11 @@ const Nav = () => (
         <Disclosure.Panel className="md:hidden">
           <div className="px-4 pt-2 pb-3 space-y-1">
             {navigation.map((item) => (
-              <Disclosure>
-                <div className="flex ">
+              <Disclosure key={item.name}>
+                <div className="flex">
                   <div className="flex hover:bg-gray-700 hover:text-white w-auto rounded-md pl-3">
                     <ArrorComponent />
                     <Disclosure.Button
-                      key={item.name}
                       as="a"
                       href={item.href}
                       className={classNames(

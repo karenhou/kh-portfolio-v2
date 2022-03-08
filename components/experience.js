@@ -7,7 +7,7 @@ const Experience = () => {
     <section className="bg-db text-white" id="exp">
       <div className="container mx-auto min-h-[45rem]">
         <div className="flex flex-col pt-[9rem] md:w-[44rem] sm:w-[36rem] w-[26rem] mx-auto">
-          <h2 className="md:text-4xl text-3xl text-lb mb-6">
+          <h2 className="md:text-4xl text-3xl text-mb mb-6">
             {">_ Experience"}
           </h2>
           <div className="w-full px-0 pt-2">
@@ -15,7 +15,7 @@ const Experience = () => {
               <Disclosure>
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-lb rounded-lg focus:outline-none focus-visible:ring">
+                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-mb rounded-lg focus:outline-none focus-visible:ring">
                       <span>Hodwa - Associate Manager</span>
                       <div className="flex">
                         <span className="mr-2">2021-2021</span>
@@ -56,7 +56,7 @@ const Experience = () => {
               <Disclosure as="div" className="mt-2">
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-lb rounded-lg focus:outline-none focus-visible:ring">
+                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-mb rounded-lg focus:outline-none focus-visible:ring">
                       <span>Hodwa - Fullstack Developer</span>
                       <div className="flex">
                         <span className="mr-2">2019-2021</span>
@@ -94,7 +94,7 @@ const Experience = () => {
               <Disclosure as="div" className="mt-2">
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-lb rounded-lg focus:outline-none focus-visible:ring">
+                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-mb rounded-lg focus:outline-none focus-visible:ring">
                       <span>Young March - Shipping Manager</span>
                       <div className="flex">
                         <span className="mr-2">2017-2019</span>
@@ -125,7 +125,7 @@ const Experience = () => {
               <Disclosure as="div" className="mt-2">
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-lb rounded-lg focus:outline-none focus-visible:ring">
+                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-mb rounded-lg focus:outline-none focus-visible:ring">
                       <span>Quanta Computer - Software Engineer</span>
                       <div className="flex">
                         <span className="mr-2">2013-2017</span>
@@ -164,7 +164,7 @@ const Experience = () => {
               <Disclosure as="div" className="mt-2">
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-lb rounded-lg focus:outline-none focus-visible:ring">
+                    <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-white bg-mb rounded-lg focus:outline-none focus-visible:ring">
                       <span>Askey Computer - RIL Engineer</span>
                       <div className="flex">
                         <span className="mr-2">2012-2013</span>

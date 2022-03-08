@@ -62,7 +62,7 @@ const TagComponent = ({ data, index }) => {
       );
     } else if (s.type === "back") {
       return (
-        <div className="rounded-lg bg-peach text-white px-2 py-1 text-sm whitespace-nowrap mr-2 mt-2">
+        <div className="rounded-lg bg-or text-white px-2 py-1 text-sm whitespace-nowrap mr-2 mt-2">
           {s.name}
         </div>
       );
@@ -83,19 +83,19 @@ const Work = () => {
         <div className="flex flex-col pt-[7rem] w-[26rem] sm:w-[36rem] md:w-[44rem] lg:w-[54rem] xl:w-[65rem] mx-auto pb-[7rem]">
           <div className="lg:flex py-4">
             <div className="lg:w-1/3 mb-2 md:mb-0">
-              <h2 className="md:text-4xl text-3xl text-lb mb-5">
+              <h2 className="md:text-4xl text-3xl text-mb mb-5">
                 {">_ Works"}
               </h2>
               <div>
-                These are some of the works I've done through out the years(self
-                or for the companyes I've worked for)
+                These are some of the works {"I've"} done through out the
+                years(self or for the companyes {"I've"} worked for)
               </div>
             </div>
 
             <div className="lg:w-2/3 flex flex-col lg:px-4 px-0">
               <div className="flex flex-col lg:px-4 px-0 border-b-2 border-white-300 py-5">
-                <div className="font-bold text-xl text-or ">
-                  <a href={stackInfo[0].url} target="_blank">
+                <div className="font-bold text-xl text-lb">
+                  <a href={stackInfo[0].url} target="_blank" rel="noreferrer">
                     {stackInfo[0].name}
                   </a>
                 </div>
@@ -108,8 +108,8 @@ const Work = () => {
               </div>
 
               <div className="flex flex-col lg:px-4 px-0 border-b-2 border-white-300 py-5">
-                <div className="font-bold text-xl text-or">
-                  <a href={stackInfo[1].url} target="_blank">
+                <div className="font-bold text-xl text-lb">
+                  <a href={stackInfo[1].url} target="_blank" rel="noreferrer">
                     {stackInfo[1].name}
                   </a>
                 </div>
@@ -122,8 +122,8 @@ const Work = () => {
               </div>
 
               <div className="flex flex-col lg:px-4 px-0 border-white-300 py-5">
-                <div className="font-bold text-xl text-or">
-                  <a href={stackInfo[2].url} target="_blank">
+                <div className="font-bold text-xl text-lb">
+                  <a href={stackInfo[2].url} target="_blank" rel="noreferrer">
                     {stackInfo[2].name}
                   </a>
                 </div>
