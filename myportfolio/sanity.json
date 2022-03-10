@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "project": {
+    "name": "my-portfolio"
+  },
+  "api": {
+    "projectId": "lf6w1ya8",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/google-maps-input",
+    "@sanity/vision"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}
