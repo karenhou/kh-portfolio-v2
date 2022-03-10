@@ -5,8 +5,9 @@ import About from "../components/about";
 import Experience from "../components/experience";
 import Work from "../components/work";
 import Footer from "../components/footer";
+import { sanityClient, urlFor } from "../sanitfy";
 
-const Home = () => (
+const Home = ({ experiences, projects }) => (
   <div>
     <Head>
       <title>{"Karen Hou's portfolio"}</title>
@@ -23,10 +24,31 @@ const Home = () => (
 
     <Hero />
     <About />
-    <Experience />
-    <Work />
+    <Experience experiences={experiences} />
+    <Work projects={projects} />
     <Footer />
   </div>
 );
+
+export async function getStaticProps(context) {
+  //use Sanity's home-grown query language GROQ to build anything you can imagine
+  const queryExperience = `*[_type=='experience']|order(beginAt desc){
+    ...
+  }`;
+  const experiences = await sanityClient.fetch(queryExperience);
+
+  const queryProjects = `*[_type=='projects']{
+    ...
+  }`;
+  const projects = await sanityClient.fetch(queryProjects);
+
+  return {
+    props: {
+      experiences,
+      projects,
+    },
+    revalidate: 43200,
+  };
+}
 
 export default Home;

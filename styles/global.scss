@@ -16,3 +16,14 @@
     width: 320px;
   }
 }
+
+.exp-container {
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+.project-box {
+  :last-child {
+    border-bottom: 0;
+  }
+}

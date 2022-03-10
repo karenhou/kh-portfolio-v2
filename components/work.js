@@ -1,82 +1,62 @@
 import React from "react";
 
-const stackInfo = [
-  {
-    name: "Lifi+ smart home page",
-    url: "https://www.lifi.plus",
-    roles:
-      "Worked with UI/UX designer and market team to recreate a new face for the company",
-    stack: [
-      { type: "front", name: "ReactJS" },
-      { type: "front", name: "Redux" },
-      { type: "back", name: "Google ReCAPTCHA" },
-      { type: "front", name: "Bootstrap 4" },
-      { type: "back", name: "i18" },
-      { type: "back", name: "NodeJS" },
-      { type: "cloud", name: "AWS Lambda" },
-      { type: "back", name: "NextJS" },
-      { type: "cloud", name: "AWS S3" },
-    ],
-  },
-  {
-    name: "EIP",
-    roles:
-      "Worked with UI/UX designer and stakeholder to design a new internal project management system",
-    url: "https://eip.lifi.plus/",
-    stack: [
-      { type: "front", name: "ReactJS" },
-      { type: "front", name: "Redux" },
-      { type: "front", name: "Bootstrap 4" },
-      { type: "cloud", name: "AWS Lambda" },
-      { type: "cloud", name: "Google FCM" },
-      { type: "cloud", name: "AWS S3" },
-      { type: "back", name: "NodeJS" },
-      { type: "back", name: "JWT" },
-      { type: "cloud", name: "AWS EC2" },
-    ],
-  },
-  {
-    name: "Trello",
-    roles:
-      "It's a side project I did a long time ago, which allow users to share their travel itinerary with others",
-    url: "https://limitless-brook-80249.herokuapp.com/",
-    stack: [
-      { type: "front", name: "ReactJS" },
-      { type: "front", name: "Redux" },
-      { type: "front", name: "Material UI" },
-      { type: "cloud", name: "ExpressJS" },
-      { type: "back", name: "MongoDB" },
-      { type: "back", name: "NodeJS" },
-      { type: "back", name: "JWT" },
-    ],
-  },
-];
-
-const TagComponent = ({ data, index }) => {
-  return data[index].stack.map((s) => {
+const TagComponent = ({ stacks }) => {
+  return stacks.map((s) => {
     if (s.type === "front") {
       return (
-        <div className="rounded-lg bg-mb text-white px-1 py-1 text-sm whitespace-nowrap mr-2 mt-2">
-          {s.name}
+        <div
+          key={s.toolName}
+          className="rounded-lg bg-mb text-white px-1 py-1 text-sm whitespace-nowrap mr-2 mt-2">
+          {s.toolName}
         </div>
       );
     } else if (s.type === "back") {
       return (
-        <div className="rounded-lg bg-or text-white px-2 py-1 text-sm whitespace-nowrap mr-2 mt-2">
-          {s.name}
+        <div
+          key={s.toolName}
+          className="rounded-lg bg-or text-white px-2 py-1 text-sm whitespace-nowrap mr-2 mt-2">
+          {s.toolName}
         </div>
       );
     } else {
       return (
-        <div className="rounded-lg bg-gr text-white px-2 py-1 text-sm whitespace-nowrap mr-2 mt-2">
-          {s.name}
+        <div
+          key={s.toolName}
+          className="rounded-lg bg-gr text-white px-2 py-1 text-sm whitespace-nowrap mr-2 mt-2">
+          {s.toolName}
         </div>
       );
     }
   });
 };
 
-const Work = () => {
+const ProjectsComponent = ({ projects }) => {
+  return (
+    <>
+      {projects.map((project, i) => {
+        return (
+          <div
+            key={i}
+            className="flex flex-col lg:px-4 px-0 border-b-2 border-white-300 py-5">
+            <div className="font-bold text-xl text-lb">
+              <a href={project.url} target="_blank" rel="noreferrer">
+                {project.projectTitle}
+              </a>
+            </div>
+            <div className="mb-3 opacity-50 md:min-h-0 min-h-[6rem] mt-2">
+              {project.description}
+            </div>
+            <div className="mb-3 flex flex-wrap">
+              <TagComponent stacks={project.stacks} />
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+const Work = ({ projects }) => {
   return (
     <section className="bg-db text-white" id="works">
       <div className="container mx-auto min-h-[50rem]">
@@ -92,48 +72,8 @@ const Work = () => {
               </div>
             </div>
 
-            <div className="lg:w-2/3 flex flex-col lg:px-4 px-0">
-              <div className="flex flex-col lg:px-4 px-0 border-b-2 border-white-300 py-5">
-                <div className="font-bold text-xl text-lb">
-                  <a href={stackInfo[0].url} target="_blank" rel="noreferrer">
-                    {stackInfo[0].name}
-                  </a>
-                </div>
-                <div className="mb-3 opacity-50 md:min-h-0 min-h-[6rem] mt-2">
-                  {stackInfo[0].roles}
-                </div>
-                <div className="mb-3 flex flex-wrap">
-                  <TagComponent data={stackInfo} index={0} />
-                </div>
-              </div>
-
-              <div className="flex flex-col lg:px-4 px-0 border-b-2 border-white-300 py-5">
-                <div className="font-bold text-xl text-lb">
-                  <a href={stackInfo[1].url} target="_blank" rel="noreferrer">
-                    {stackInfo[1].name}
-                  </a>
-                </div>
-                <div className="mb-3 opacity-50 md:min-h-0 min-h-[6rem] mt-2">
-                  {stackInfo[1].roles}
-                </div>
-                <div className="mb-3 flex flex-wrap">
-                  <TagComponent data={stackInfo} index={1} />
-                </div>
-              </div>
-
-              <div className="flex flex-col lg:px-4 px-0 border-white-300 py-5">
-                <div className="font-bold text-xl text-lb">
-                  <a href={stackInfo[2].url} target="_blank" rel="noreferrer">
-                    {stackInfo[2].name}
-                  </a>
-                </div>
-                <div className="mb-3 opacity-50 md:min-h-0 min-h-[6rem] mt-2">
-                  {stackInfo[2].roles}
-                </div>
-                <div className="mb-3 flex flex-wrap">
-                  <TagComponent data={stackInfo} index={2} />
-                </div>
-              </div>
+            <div className="lg:w-2/3 flex flex-col lg:px-4 px-0 project-box">
+              <ProjectsComponent projects={projects} />
             </div>
           </div>
         </div>
