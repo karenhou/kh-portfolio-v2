@@ -23,6 +23,6 @@ npm i
 
 ## Roadmap(TODOs)
 
-- add images for works
-- upload content to headless CMS
+- add images for works - thumbnails
 - create favicon
+- make it into a PWA site
