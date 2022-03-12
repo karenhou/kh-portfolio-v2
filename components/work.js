@@ -46,7 +46,7 @@ const ProjectsComponent = ({ projects }) => {
                 className="rounded-lg md:max-w-[19rem]"
               />
             </div>
-            <div className="flex flex-col xs:mt-4">
+            <div className="flex flex-col md:mt-0 mt-4">
               <div className="font-bold text-xl text-lb">
                 <a href={project.url} target="_blank" rel="noreferrer">
                   {project.projectTitle}
