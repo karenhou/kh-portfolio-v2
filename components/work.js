@@ -1,4 +1,5 @@
 import React from "react";
+import { urlFor } from "../sanitfy";
 
 const TagComponent = ({ stacks }) => {
   return stacks.map((s) => {
@@ -37,17 +38,26 @@ const ProjectsComponent = ({ projects }) => {
         return (
           <div
             key={i}
-            className="flex flex-col lg:px-4 px-0 border-b-2 border-white-300 py-5">
-            <div className="font-bold text-xl text-lb">
-              <a href={project.url} target="_blank" rel="noreferrer">
-                {project.projectTitle}
-              </a>
+            className="flex md:flex-row flex-col lg:px-4 px-0 border-b-2 border-white-300 py-5 ">
+            <div className="sm:mr-7">
+              <img
+                src={urlFor(project.image).fit("max").url()}
+                alt=""
+                className="rounded-lg md:max-w-[19rem]"
+              />
             </div>
-            <div className="mb-3 opacity-50 md:min-h-0 min-h-[6rem] mt-2">
-              {project.description}
-            </div>
-            <div className="mb-3 flex flex-wrap">
-              <TagComponent stacks={project.stacks} />
+            <div className="flex flex-col xs:mt-4">
+              <div className="font-bold text-xl text-lb">
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  {project.projectTitle}
+                </a>
+              </div>
+              <div className="mb-3 opacity-50 md:min-h-0 sm:min-h-[6rem] min-h-[3rem] mt-2">
+                {project.description}
+              </div>
+              <div className="mb-3 flex flex-wrap">
+                <TagComponent stacks={project.stacks} />
+              </div>
             </div>
           </div>
         );

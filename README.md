@@ -14,6 +14,7 @@ npm i
 - NextJS
 - Tailwind
 - SASS
+- Sanity.io - headless CMS
 
 ## Deploy
 
@@ -23,6 +24,5 @@ npm i
 
 ## Roadmap(TODOs)
 
-- add images for works - thumbnails
 - create favicon
 - make it into a PWA site

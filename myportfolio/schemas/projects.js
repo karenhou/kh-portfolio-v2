@@ -22,6 +22,12 @@ export default {
       description: "link for the projects",
     },
     {
+      name: "image",
+      title: "Image",
+      type: "image",
+      description: "image for project",
+    },
+    {
       name: "stacks",
       title: "Stacks",
       type: "array",
