@@ -3,6 +3,7 @@ import GitHubIcon from "../assets/images/Github - Negative.svg";
 import EmailIcon from "../assets/images/Google - Negative.svg";
 import LinkedinIcon from "../assets/images/LinkedIn - Negative.svg";
 import Image from "next/image";
+import ScrollTopButton from "./scrollTopButton";
 
 const Footer = () => {
   return (
@@ -44,6 +45,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <ScrollTopButton />
     </footer>
   );
 };
