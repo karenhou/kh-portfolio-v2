@@ -32,6 +32,18 @@ const DisclosureComponent = ({ experiences }) => {
                       return <li key={detail._key}>- {detail.content}</li>;
                     })}
                   </ul>
+                  {exp.projects && (
+                    <>
+                      <div className="mt-3 font-bold">Projects:</div>
+                      <ul>
+                        {exp.projects.map((project) => {
+                          return (
+                            <li key={project._key}>- {project.content}</li>
+                          );
+                        })}
+                      </ul>
+                    </>
+                  )}
                 </Disclosure.Panel>
               </>
             )}

@@ -17,8 +17,8 @@ const Hero = () => {
             Currently, fullstack developer based in Taipei, Taiwan
           </p>
           <p className="opacity-50 md:text-2xl text-xl">
-            I develope clean and high quality websites and help small business
-            to create online presense
+            I develop clean and high quality websites and help small business to
+            create online presense
           </p>
           <button className="mt-5 rounded-md border-[0.1rem] border-lb w-24 px-3 py-2">
             <a href="mailto:ymcl760728@gmail.com">Say Hi</a>
