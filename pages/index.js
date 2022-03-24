@@ -47,7 +47,7 @@ export async function getStaticProps(context) {
       experiences,
       projects,
     },
-    revalidate: 43200,
+    revalidate: 21600, //update every 6 hours
   };
 }
 
